@@ -1,0 +1,20 @@
+@charset "UTF-8"
+<style>
+ body {
+  color: gray;
+  font-size: 15px;
+}
+
+p {
+  text-indent: 1rem;
+}
+
+details {
+  text-indent: 1rem;
+ }
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+  }
+</style>
