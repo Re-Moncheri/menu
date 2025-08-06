@@ -5,42 +5,6 @@
   color: black;
 }
 
-.listS {
-  padding-bottom: 10px;
-}
-
-.listS ul li {
-  padding: 10px 0;
-  list-style: inside;
-}
-
-.listR {
-  padding-bottom: 10px;
-}
-
-.listR ul li {
-  padding: 10px 0;
-  list-style: inside;
-}
-
-.listT {
-  padding-bottom: 10px;
-}
-
-.listT ul li {
-  padding: 10px 0;
-  list-style: inside;
-}
-
-.listO {
-  padding-bottom: 10px;
-}
-
-.listO ul li {
-  padding: 10px 0;
-  list-style: inside;
-}
-
 summary {
   position: relative;
   display: block; /* 矢印を消す */
