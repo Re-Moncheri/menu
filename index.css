@@ -1,7 +1,8 @@
-/* 基本スタイル */
+/* 背景と全体設定 */
 body {
     font-family: "Hiragino Kaku Gothic ProN", "Segoe UI", sans-serif;
-    background-color: #fff8f5;
+    background: linear-gradient(135deg, #fff8f5, #fff0f7);
+    background-attachment: fixed;
     color: #333;
     margin: 0;
     padding: 30px 20px;
@@ -10,10 +11,11 @@ body {
 /* タイトル */
 h1 {
     text-align: center;
-    color: #ff6699;
+    color: #ff66aa;
     font-size: 2.5em;
     margin-bottom: 40px;
     text-shadow: 1px 1px #ffe6ec;
+    letter-spacing: 2px;
 }
 
 /* セクション全体 */
@@ -24,17 +26,17 @@ section {
 
 /* 各カテゴリブロック */
 details {
-    background-color: #fff0f5;
-    border-radius: 12px;
-    padding: 12px 18px;
-    margin-bottom: 16px;
+    border-radius: 16px;
+    padding: 14px 20px;
+    margin-bottom: 18px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    transition: background 0.3s, transform 0.2s;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    background-color: #ffffffcc;
 }
 
 details:hover {
-    background-color: #ffe4ee;
-    transform: scale(1.01);
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 /* 見出し */
@@ -42,7 +44,6 @@ summary {
     font-weight: bold;
     font-size: 1.3em;
     cursor: pointer;
-    color: #d63384;
     list-style: none;
     padding: 8px 0;
     outline: none;
@@ -53,10 +54,14 @@ summary::marker {
     display: none;
 }
 
-/* アイコン的な見た目追加 */
-summary::before {
-    content: "🍹 ";
-}
+/* カテゴリ別絵文字 */
+details[data-type="shochu"] summary::before { content: "🥃 "; color: #c47f5d; }
+details[data-type="liqueur"] summary::before { content: "🍸 "; color: #ff80ab; }
+details[data-type="whisky"] summary::before { content: "🪵 "; color: #d4a373; }
+details[data-type="spirit"] summary::before { content: "🍹 "; color: #ffd166; }
+details[data-type="shot"] summary::before { content: "💥 "; color: #ff4d4d; }
+details[data-type="other-alc"] summary::before { content: "🍶 "; color: #66bb6a; }
+details[data-type="non-alc"] summary::before { content: "🍵 "; color: #81c784; }
 
 /* リスト */
 ul {
@@ -66,14 +71,15 @@ ul {
 
 li {
     margin: 6px 0;
-    list-style-type: "🍸 ";
+    list-style-type: "✨ ";
     line-height: 1.6;
 }
 
-/* 特定の文字にスタイルつける */
-li:has(br) {
-    color: #555;
-    font-size: 0.95em;
+/* 別料金表示の色付け */
+li span.extra {
+    color: #ff4081;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 /* メディアクエリ：スマホ対応 */
@@ -81,11 +87,9 @@ li:has(br) {
     h1 {
         font-size: 2em;
     }
-
     summary {
         font-size: 1.1em;
     }
-
     body {
         padding: 20px 10px;
     }

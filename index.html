@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>メニュー表 (※テスト中)</title>
+    <title>メニュー表</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>メニュー</h1>
+    <h1>☟ ドリンクメニュー ☟</h1>
 
     <section>
-        <details>
+        <details data-type="shochu">
             <summary>焼酎</summary>
             <ul>
                 <li>二階堂(麦)</li>
                 <li>いいちこ(麦)</li>
                 <li>黒霧島(芋)</li>
-                <li>キンミヤ
+                <li>キンミヤ</li>
                 <li>鍛高譚(しそ・赤しそ)</li>
                 <li>鏡月</li>
                 <li>茉莉花(ジャスミン)</li>
@@ -24,7 +24,7 @@
             </ul>
         </details>
 
-        <details>
+        <details data-type="liqueur">
             <summary>リキュール</summary>
             <ul>
                 <li>カシス</li>
@@ -42,10 +42,10 @@
                 <li>ヨーグルト</li>
                 <li>ブルーキュラソー</li>
                 <li>パッソア(パッションフルーツ)</li>
-　　　　　　　</ul>
+            </ul>
         </details>
 
-        <details>
+        <details data-type="whisky">
             <summary>ウイスキー</summary>
             <ul>
                 <li>角</li>
@@ -55,13 +55,13 @@
                 <li>Dewar's</li>
                 <li>Chivas</li>
                 <li>サントリーオールド</li>
-                <li>山崎(別料金:¥1,200)</li>
-                <li>響(別料金:¥1,200)</li>
+                <li>山崎 <span class="extra">＋1,200円</span></li>
+                <li>響 <span class="extra">＋1,200円</span></li>
             </ul>
         </details>
 
-        <details>
-            <summary>その他スピリッツ</summary>
+        <details data-type="spirit">
+            <summary>スピリッツ</summary>
             <ul>
                 <li>ジン(ボンベイ・翠)</li>
                 <li>ウォッカ</li>
@@ -71,37 +71,36 @@
             </ul>
         </details>
 
-        <details>
+        <details data-type="shot">
             <summary>ショット</summary>
             <ul>
                 <li>テキーラ</li>
                 <li>イェーガー</li>
                 <li>タランチュラ</li>
                 <li>ウォッカ</li>
-                <li>コカボム(別料金:¥500)</li>
-                <li>クライナー(別料金:¥500)<br>(レッドベリー・アイスティー)</li>
+                <li>コカボム <span class="extra">＋500円</span></li>
+                <li>クライナー(レッドベリー・アイスティー) <span class="extra">＋500円</span></li>
             </ul>
         </details>
 
-        <details>
+        <details data-type="other-alc">
             <summary>その他アルコール</summary>
             <ul>
                 <li>レモンチューハイ</li>
-                <li>スラット<br>(レモン・シャルドネ・ピーチ・アロエ)</li>
-                <li>イェーガー</li>
+                <li>スラット(レモン・シャルドネ・ピーチ・アロエ)</li>
                 <li>梅酒、しそ梅酒</li>
             </ul>
         </details>
 
-        <details>
-            <summary>ノンアルコール</summary>
+        <details data-type="non-alc">
+            <summary>ノンアル・ソフトドリンク</summary>
             <ul>
                 <li>緑茶</li>
                 <li>ウーロン茶</li>
                 <li>ジャスミン茶</li>
                 <li>麦茶</li>
-                <li>午後の紅茶(ストレート、ミルク、レモン)</li>
-                <li>水</li>
+                <li>午後の紅茶(ストレート・ミルク・レモン)</li>
+                <li>水（無料）</li>
                 <li>炭酸水</li>
                 <li>トニックウォーター</li>
                 <li>コーラ</li>
@@ -117,6 +116,4 @@
         </details>
     </section>
 </body>
-
 </html>
-
